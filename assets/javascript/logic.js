@@ -45,7 +45,10 @@ $(document).ready(function () {
     ]
 
     function startpage() {
-        $(".container-initialTimer").prepend("<button type='button' class='btn btn-success start-button btn-lg'>Start</button>");
+        $(".container-initialTimer").prepend("<div>If you think you know all about marvel press start to continue</div>");
+        $(".container-initialTimer").append("<div><img src='https://data.whicdn.com/images/171178954/original.gif' width = '700px' height ='400px'/></div>")
+        $(".container-initialTimer").append("<div><button type='button' class='btn btn-success start-button btn-lg'>Start</button></div>");
+        
         $("body").on("click", '.start-button', function (event) {
             console.log("button clicked " + $(this).text());
             askQuestion();
@@ -64,7 +67,7 @@ $(document).ready(function () {
             console.log(questionArray + " Here is the question array");
             $(".container-initialTimer").empty();
 
-            questionDiv.append("<div id='timerDiv'>Time Remaining: <span id=timer>10</span> seconds</div" + "<br>");
+            questionDiv.append("<div id='timerDiv'>Time Remaining: <span id=timer>15</span> seconds</div" + "<br>");
             questionDiv.append("<div id='questionDiv'>" + questionArray[questionIndex].Question + "</div" + "<br>");
 
             for (var i = 0; i < questionArray[questionIndex].Choises.length; i++) {
@@ -73,7 +76,7 @@ $(document).ready(function () {
             }
 
             $(".container-initialTimer").prepend(questionDiv);
-            number = 10;
+            number = 15;
 
             run2();
         }
@@ -100,6 +103,8 @@ $(document).ready(function () {
         clearInterval(questionCounter);
         questionDiv.empty();
         alert("Times Up")
+        $(".container-initialTimer").append("<div><img src='https://media1.tenor.com/images/072d5a3d122d51cfba9b70c05dd2b746/tenor.gif?itemid=10304685' width = '700px' height ='400px'/></div>")
+        
         noAnswer++;
 
         //questionDiv.append("<img src='" + questionArray[questionIndex].Picture + "'/>")
