@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    height: 700px;
+    background-color:lightgoldenrodyellow;
+    display: inline-block;
+    
+    position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+   
+   
+}
+
+.container-title{
+font-family: 'Indie Flower', cursive;
+font-size: 28px;
+}
+.container-initialTimer{
+
+    font-size: 40px;
+}
+.btn:hover{
+    background-color: red;
+    
+}
+.btn:active{
+    border: none;
+    background-color: red;
+}
