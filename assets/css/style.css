@@ -19,10 +19,36 @@ body{
 .container-title{
 font-family: 'Indie Flower', cursive;
 font-size: 28px;
+text-align: center;
+}
+.container-title h1{
+    font-size: 38px;
+}
+
+
+.container-initialTimer{
+    text-align: center;
+}
+#timerDiv{
+    text-align: center;
+}
+#questionDiv{
+    text-align: center;
 }
 .container-initialTimer{
 
     font-size: 40px;
+}
+.btn{
+    text-align: center;
+}
+button{
+    
+}
+/* .btn{
+    background-color: grey;
+    color: black;
+    border: none;
 }
 .btn:hover{
     background-color: red;
@@ -31,4 +57,4 @@ font-size: 28px;
 .btn:active{
     border: none;
     background-color: red;
-}
+} */
