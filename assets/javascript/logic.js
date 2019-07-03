@@ -123,7 +123,7 @@ $(document).ready(function () {
             correctTotal++;
             setTimeout(() => {
                 askQuestion();
-            }, 1000);
+            }, 4000);
         }
         else {
             console.log("Wrong answer")
@@ -134,7 +134,7 @@ $(document).ready(function () {
             inCorrectTotal++;
             setTimeout(() => {
                 askQuestion();
-            }, 1000);
+            }, 4000);
         }
     });
     function restart() {
