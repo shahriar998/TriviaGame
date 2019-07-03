@@ -103,7 +103,6 @@ $(document).ready(function () {
         clearInterval(questionCounter);
         questionDiv.empty();
         alert("Times Up")
-        $(".container-initialTimer").append("<div><img src='https://media1.tenor.com/images/072d5a3d122d51cfba9b70c05dd2b746/tenor.gif?itemid=10304685' width = '700px' height ='400px'/></div>")
         
         noAnswer++;
 
